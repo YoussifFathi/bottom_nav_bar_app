@@ -1,3 +1,4 @@
+import 'package:bottom_nav_bar_app/views/different_nav_bottom_bar/convex.dart';
 import 'package:bottom_nav_bar_app/views/different_nav_bottom_bar/normal.dart';
 import 'package:flutter/material.dart';
 
@@ -16,6 +17,12 @@ class HomeView extends StatelessWidget {
               child: ElevatedButton(onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) => NormalBottomNavBar(),));
               }, child: Text("Normal"),),
+            ),
+            SizedBox(
+              width: 200,
+              child: ElevatedButton(onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => ConvexBottomNavBar(),));
+              }, child: Text("Convex"),),
             ),
           ],
         ),
